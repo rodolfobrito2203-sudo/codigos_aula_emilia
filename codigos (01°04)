@@ -1,0 +1,82 @@
+NUMEROS POSITIVOS,NEUTRO OU NEGATIVOS
+Algoritmo "numeros"
+
+
+          Var
+            numero:inteiro
+
+
+            Inicio
+                  escreval("escreva um número qualquer pertecentes aos inteiros")
+                    leia(numero)
+
+                      se(numero>0)entao
+                             escreval("seu numero e POSITIVO")
+
+                         senao
+                          se (numero=0) entao
+                               escreval("seu numero e NEUTRO")
+
+                           senao
+                                 escreval("seu numero e NEGATIVO")
+                                  fimse
+                                       fimse
+
+Fimalgoritmo
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Algoritmo "triangulos"
+
+
+Var
+   triangulo:logico
+   l1,l2,l3:real
+
+
+Inicio
+   escreval("escreva um lado para seu triangulo")
+    leia(l1)
+      escreval("escreva outro lado para seu triangulo")
+        leia(l2)
+         escreval("escreva outro lado pra seu triangulo")
+          leia(l3)
+
+           triangulo<-(l1<l2+l3) e (l2<l1+l3) e (l3<l1+l2)
+            escreval("seu triangulo é real ?", triangulo)
+             se (triangulo) entao
+                escreval("que tipo de triangulo é ? ")
+
+                     se (l1=l2) e (l2=l3) entao
+                       escreval("seu triangulo é EQUILATERO")
+                       senao
+                           se (l1<>l2) e (l2<>l3) entao
+                                escreval("seu triangulo é ESCALENO ")
+                                   senao
+                                       escreval("seu triangulo é ISOSCELES ")
+            fimse
+         fimse
+      fimse
+Fimalgoritmo
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Algoritmo "Aposentadoria"
+var
+   idade,t_servico:inteiro
+inicio
+   escreval("para se aposentar vc precisa apresentar ao menos um desses requisitos")
+   escreval("ter pelo menos 65 anos")
+   escreval("ter pelo menos 60 anos e 25 de tempo de serviço")
+   escreval("ter 30 anos de serviço")
+   escreval("qual sua idade senhor?")
+   leia(idade)
+   escreval("quantos anos o senhor trabalhou?")
+   leia (t_servico)
+
+   se (idade>=65) ou (idade>=60) e (t_servico>=25) ou (t_servico>=30)entao
+      escreval("requerir aposentadoria")
+   senao
+      escreval("nao requerir aposentadoria")
+   fimse
+fimalgoritmo
+
