@@ -1,5 +1,5 @@
 NUMEROS POSITIVOS,NEUTRO OU NEGATIVOS
-Algoritmo "numeros"
+24)Algoritmo "numeros"
 
 
           Var
@@ -79,4 +79,47 @@ inicio
       escreval("nao requerir aposentadoria")
    fimse
 fimalgoritmo
+---------------------------
+4)Algoritmo "semnome"
+ var
+   n:inteiro
 
+
+ inicio
+    escreva("escreva um numero qualquer ")
+        leia(n)
+           escreval("o antecessor desse numero e: ")
+             escreva(n-1)
+                 
+ fimalgoritmo
+-------------------------------
+5)Algoritmo "semnome"
+ var
+  area,base,altura:inteiro
+
+
+ inicio
+    escreval("escreva um valor para base de um retangulo qualquer")
+     leia(base)
+       escreval("agora escreva um valor para a altura de um retangulo qualquer")
+        leia(altura)
+         area<-base*altura
+          escreval("a sua area e: ",area)
+    
+ fimalgoritmo
+-------------------------------------------------------
+6)Algoritmo "semnome"
+ var
+    id_dias,id_meses,id_ano:inteiro
+    
+ inicio
+              escreva("escreva sua idade em anos ")
+                    leia(id_ano)
+                      escreva("escreva sua idade em meses ")
+                       leia(id_meses)
+                        escreva("escreva sua idade em dias ")
+                         leia(id_dias)
+                           escreval("sua idade em anos, meses e dias e respectivamente: ", id_ano ,"anos", id_meses, "meses e" , id_dias, "dias")
+
+    
+ fimalgoritmo
