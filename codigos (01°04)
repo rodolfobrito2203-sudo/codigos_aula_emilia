@@ -1,27 +1,19 @@
 NUMEROS POSITIVOS,NEUTRO OU NEGATIVOS
 24)Algoritmo "numeros"
-
-
           Var
             numero:inteiro
-
-
             Inicio
                   escreval("escreva um número qualquer pertecentes aos inteiros")
                     leia(numero)
-
                       se(numero>0)entao
                              escreval("seu numero e POSITIVO")
-
                          senao
                           se (numero=0) entao
                                escreval("seu numero e NEUTRO")
-
                            senao
                                  escreval("seu numero e NEGATIVO")
-                                  fimse
-                                       fimse
-
+              fimse
+            fimse
 Fimalgoritmo
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -131,9 +123,6 @@ Algoritmo "ex7"
 Var
    eleitor,vb,vn,vv:inteiro
    pB,pV,pN:real
-
-
-
 Inicio
        escreval("quantos eleitores esse municipio possui? ")
           leia(eleitor)
@@ -198,3 +187,127 @@ Algoritmo "ex12"
 
 Fimalgoritmo
 -------------------------------------------------------------------------
+algoritmo "ex15"
+
+var
+  ano_atual,ano_nascimento:inteiro
+  vota:logico
+  inicio
+      escreval("voce pode votar em 2026? ")
+      escreval("qual seu ano de nascimento? ")
+      leia(ano_nascimento)
+      ano_atual<-2026
+      se (ano_atual-ano_nascimento)>=18 entao
+      vota<-verdadeiro
+      escreva("a resposta e: SIM",", ",vota)
+      senao
+      vota<-falso
+      escreva ("a resposta é : NAO ", ",",vota)
+      
+
+   fimse
+fimalgoritmo
+---------------------------------------------------------------------
+Algoritmo "ex16"
+ var
+  n1,n2:inteiro
+  
+   inicio
+   escreval("escreva um numero qualquer: ")
+    leia(n1)
+     escreval("escreva outro numero diferente do primeiro")
+      leia (n2)
+    se n1<>n2 entao
+    escreval ("o maior e: ")
+    se n1>n2 entao
+    escreval (n1)
+    senao
+    escreval(n2)
+    
+    fimse
+   fimse
+ fimalgoritmo
+-----------------------------------------------------------
+Algoritmo "ex17"
+ var
+  n1,n2:inteiro
+  
+   inicio
+   escreval("escreva um numero qualquer: ")
+    leia(n1)
+     escreval("escreva outro numero diferente do primeiro")
+      leia (n2)
+        se n1<>n2 entao
+         se (n1 < n2) entao
+         escreva(n1, ", ", n2)
+          senao
+           escreva(n2, ", ", n1)
+   fimse
+  fimse
+
+ fimalgoritmo
+-----------------------------------------------------------
+Algoritmo "ex27"
+var
+   n1, n2, n3: inteiro
+
+inicio
+       escreval("Escreva um numero ")
+         leia(n1)
+           escreval("Escreva um outro numero")
+                   leia(n2)
+                      escreval("Escreva um outro numero qualquer")
+                    leia(n3)
+                         se (n1 <> n2) e (n1 <> n3) e (n2 <> n3) entao
+                 escreval("Ordem crescente: ")
+
+
+                          se (n1 < n2) e (n2 < n3) entao
+                             escreval(n1, ", ", n2, ", ", n3)
+                          senao
+                             se (n1 < n3) e (n3 < n2) entao
+                                escreval(n1, ", ", n3, ", ", n2)
+                             senao
+                                se (n2 < n1) e (n1 < n3) entao
+                                   escreval(n2, ", ", n1, ", ", n3)
+                                 senao
+                                   se (n2 < n3) e (n3 < n1) entao
+                                       escreval(n2, ", ", n3, ", ", n1)
+                                     senao
+                                        se (n3 < n1) e (n1 < n2) entao
+                                          escreval(n3, ", ", n1, ", ", n2)
+                                         senao
+                                           escreval(n3, ", ", n2, ", ", n1)
+                fimse
+               fimse
+              fimse
+             fimse
+            fimse
+           fimse
+fimalgoritmo
+-------------------------------------------------------
+Algoritmo "ex25"
+var
+   n1, n2, n3: inteiro
+
+inicio
+       escreval("Escreva um numero ")
+         leia(n1)
+           escreval("Escreva um outro numero")
+         leia(n2)
+            escreval("Escreva um outro numero qualquer")
+         leia(n3)
+              se (n1 <> n2) e (n1 <> n3) e (n2 <> n3) entao
+               escreval("Entao o maior numero e:")
+                     se (n1 > n2) e (n1 > n3) entao
+                      escreval("O maior número é o primeiro: ", n1)
+                                   senao
+                               se (n2 > n1) e (n2 > n3) entao
+                                escreval("O maior número é o segundo: ", n2)
+                               senao
+                                  escreval("O maior número é o terceiro: ", n3)
+          fimse
+        fimse
+fimalgoritmo
+-----------------------------------------------------------
+Algoritmo "ex26"
