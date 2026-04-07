@@ -64,26 +64,26 @@ Algoritmo "Aposentadoria"
 var
    idade,t_servico:inteiro
 inicio
-   escreval("para se aposentar vc precisa apresentar ao menos um desses requisitos")
-   escreval("ter pelo menos 65 anos")
-   escreval("ter pelo menos 60 anos e 25 de tempo de serviço")
-   escreval("ter 30 anos de serviço")
-   escreval("qual sua idade senhor?")
-   leia(idade)
-   escreval("quantos anos o senhor trabalhou?")
-   leia (t_servico)
+             escreval("para se aposentar vc precisa apresentar ao menos um desses requisitos")
+              escreval("ter pelo menos 65 anos")
+               escreval("ter pelo menos 60 anos e 25 de tempo de serviço")
+                escreval("ter 30 anos de serviço")
+                 escreval("qual sua idade senhor?")
+                   leia(idade)
+                    escreval("quantos anos o senhor trabalhou?")
+                     leia (t_servico)
 
-   se (idade>=65) ou (idade>=60) e (t_servico>=25) ou (t_servico>=30)entao
-      escreval("requerir aposentadoria")
-   senao
-      escreval("nao requerir aposentadoria")
+             se (idade>=65) ou (idade>=60) e (t_servico>=25) ou (t_servico>=30)entao
+                escreval("requerir aposentadoria")
+             senao
+                escreval("nao requerir aposentadoria")
    fimse
 fimalgoritmo
----------------------------
-4)Algoritmo "semnome"
+------------------------------------------------------------------------------------------------------------------
+4)Algoritmo "ex4"
  var
    n:inteiro
-
+          
 
  inicio
     escreva("escreva um numero qualquer ")
@@ -93,7 +93,7 @@ fimalgoritmo
                  
  fimalgoritmo
 -------------------------------
-5)Algoritmo "semnome"
+5)Algoritmo "ex5"
  var
   area,base,altura:inteiro
 
@@ -107,8 +107,8 @@ fimalgoritmo
           escreval("a sua area e: ",area)
     
  fimalgoritmo
--------------------------------------------------------
-6)Algoritmo "semnome"
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+6)Algoritmo "ex6"
  var
     id_dias,id_meses,id_ano:inteiro
     
@@ -123,3 +123,78 @@ fimalgoritmo
 
     
  fimalgoritmo
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Algoritmo "ex7"
+
+Var
+   eleitor,vb,vn,vv:inteiro
+   pB,pV,pN:real
+
+
+
+Inicio
+       escreval("quantos eleitores esse municipio possui? ")
+          leia(eleitor)
+            escreval("quantos votos brancos foram contabilizados? ")
+              leia(vb)
+                escreval("quantos votos nulos foram contabilizados? ")
+                  leia(vn)
+                    escreval("quantos votos validos foram contabilizados? ")
+                     leia(vv)
+                                       escreval("--- Resultado da Apuração ---")
+                              escreval("qual o percentual dos votos brancos nesse municipio?")
+                               pB<-(vb/eleitor)*100
+                                           escreval(pB)
+                                 escreval("qual o percentual dos votos nulos nesse municipio?")
+                                    pN<-(vn/eleitor)*100
+                                                 escreval(pN)
+                                       escreval("qual o percentual dos votos validos nesse municipio?")
+                                           pV<-(vv/eleitor)*100
+                                                    escreval(pV)
+                                           
+
+
+Fimalgoritmo
+--------------------------------------------------------------------------
+
+Algoritmo "ex11"
+
+Var
+ n:inteiro
+
+
+Inicio
+       escreval("escreva um numero qualquer")
+        leia(n)
+         se (n=10) entao
+         escreva("e o numero 10 ")
+         senao
+          se n<=10 entao
+           escreva("NAO E MAIOR QUE 10!")
+            senao
+             escreva("E MAIOR QUE 10")
+       fimse
+      fimse
+       
+   fimalgoritmo
+
+------------------------------------------------------------------------
+Algoritmo "ex12"
+
+
+          Var
+            numero:inteiro
+            Inicio
+                  escreval("escreva um número qualquer pertecentes aos inteiros")
+                    leia(numero)
+                      se(numero>=0)entao
+                             escreval("seu numero e POSITIVO")
+                           senao
+                                 escreval("seu numero e NEGATIVO")
+               fimse
+
+
+Fimalgoritmo
+-------------------------------------------------------------------------
