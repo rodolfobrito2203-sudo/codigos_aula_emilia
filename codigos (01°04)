@@ -1,5 +1,5 @@
 NUMEROS POSITIVOS,NEUTRO OU NEGATIVOS
-24)Algoritmo "numeros"
+24)Algoritmo "ex24"
           Var
             numero:inteiro
             Inicio
@@ -14,7 +14,7 @@ NUMEROS POSITIVOS,NEUTRO OU NEGATIVOS
                                  escreval("seu numero e NEGATIVO")
               fimse
             fimse
-Fimalgoritmo
+fimalgoritmo
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -49,9 +49,8 @@ Inicio
             fimse
          fimse
       fimse
-Fimalgoritmo
+fimalgoritmo
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 Algoritmo "Aposentadoria"
 var
    idade,t_servico:inteiro
@@ -84,7 +83,7 @@ fimalgoritmo
              escreva(n-1)
                  
  fimalgoritmo
--------------------------------
+-----------------------------------------------------------------------------
 5)Algoritmo "ex5"
  var
   area,base,altura:inteiro
@@ -115,8 +114,6 @@ fimalgoritmo
 
     
  fimalgoritmo
-
-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 Algoritmo "ex7"
 
@@ -147,7 +144,6 @@ Inicio
 
 Fimalgoritmo
 --------------------------------------------------------------------------
-
 Algoritmo "ex11"
 
 Var
@@ -245,7 +241,7 @@ Algoritmo "ex17"
 
  fimalgoritmo
 -----------------------------------------------------------
-algoritmo "20"
+algoritmo "ex20"
 var
    nome,sexo: caracter
    pesoideal,altura: real
@@ -267,6 +263,30 @@ inicio
       pesoideal <- (62.1 * altura) - 44.7
    fimse
          escreval("Peso ideal: ", pesoideal)
+fimalgoritmo
+------------------------------------------------------------
+Algoritmo "ex25"
+var
+   n1,n2,n3: inteiro
+
+inicio
+       escreval("Escreva um numero ")
+         leia(n1)
+           escreval("Escreva um outro numero")
+         leia(n2)
+            escreval("Escreva um outro numero qualquer")
+         leia(n3)
+                     se (n1 <> n2) e (n1 <> n3) e (n2 <> n3) entao
+               escreval("Entao o maior numero e:")
+                     se (n1 > n2) e (n1 > n3) entao
+                      escreval("O maior número é o primeiro: ", n1)
+                                   senao
+                     se (n2 > n1) e (n2 > n3) entao
+                      escreval("O maior número é o segundo: ", n2)
+                               senao
+                     escreval("O maior número é o terceiro: ", n3)
+          fimse
+        fimse
 fimalgoritmo
 ------------------------------------------------------------
 Algoritmo "ex27"
@@ -308,31 +328,68 @@ inicio
            fimse
 fimalgoritmo
 -------------------------------------------------------
-Algoritmo "ex25"
-var
-   n1,n2,n3: inteiro
+Algoritmo "ex28"
 
-inicio
-       escreval("Escreva um numero ")
-         leia(n1)
-           escreval("Escreva um outro numero")
-         leia(n2)
-            escreval("Escreva um outro numero qualquer")
-         leia(n3)
-                     se (n1 <> n2) e (n1 <> n3) e (n2 <> n3) entao
-               escreval("Entao o maior numero e:")
-                     se (n1 > n2) e (n1 > n3) entao
-                      escreval("O maior número é o primeiro: ", n1)
-                                   senao
-                     se (n2 > n1) e (n2 > n3) entao
-                      escreval("O maior número é o segundo: ", n2)
-                               senao
-                     escreval("O maior número é o terceiro: ", n3)
-          fimse
-        fimse
+
+Var
+   triangulo:logico
+   l1,l2,l3:real
+
+
+Inicio
+   escreval("escreva um lado para seu triangulo")
+    leia(l1)
+      escreval("escreva outro lado para seu triangulo")
+        leia(l2)
+         escreval("escreva outro lado pra seu triangulo")
+          leia(l3)
+
+           triangulo<-(l1<l2+l3) e (l2<l1+l3) e (l3<l1+l2)
+            escreval("seu triangulo é real ?", triangulo)
 fimalgoritmo
 --------------------------------------------------------------------------------
-algoritmo "31"
+Algoritmo "ex29 "
+  Var
+     t1,t2: caractere
+     gols1,gols2: inteiro
+  Inicio
+     escreva("Nome dos times: ")
+     leia(t1,t2)
+     escreva("Gols do primeiro time: ")
+     leia(gols1)
+     escreva("Gols do segundo time: ")
+     leia(gols2)
+
+     se gols1 > gols2 entao
+        escreva(t1, " foi o grande vencedor!!!!")
+     senao
+        se gols2 > gols1 entao
+           escreva(t2, " foi o grande vencedor!!!!")
+        senao
+           escreva("EMPATE")
+        fimse
+     fimse
+  Fimalgoritmo
+--------------------------------------------------------------------
+Algoritmo "ex30"
+Var
+    n1,n2:inteiro
+Inicio
+       escreval("escreva 2 numeros aleatorios")
+          leia(n1,n2)
+        se (n1>n2) entao
+       escreval("o primeiro e maior ")
+       senao
+        se (n2=n1) entao
+       escreval("os numeros sao iguais")
+      senao
+       escreval("o segundo e maior ")
+      fimse
+   fimse
+
+fimalgoritmo
+------------------------------------------------------------------------------
+algoritmo "ex31"
 var
    x,y,z: inteiro
    resposta: caracter
@@ -353,8 +410,6 @@ inicio
       escreval(z, resultado)
 fimalgoritmo
 
-
-
 teste de mesa
 passo                             operação                       x            y            z                                resposta
                                                                  3            2            11                                  B                    
@@ -364,7 +419,7 @@ passo                             operação                       x            
                                                                  50           3            155                                 C        
                               INCOMPLETOOO                           INCOMPLETOOOO                                 INCOMPLETO                          INCOMPLETOO                                                                                                                                                
 ----------------------------------------------------------------------------------------------------------
-algoritmo "39"
+algoritmo "ex39"
 var
    a,b,c: inteiro
    mens: caracter
