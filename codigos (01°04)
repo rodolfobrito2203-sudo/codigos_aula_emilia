@@ -171,18 +171,16 @@ Inicio
 
 ------------------------------------------------------------------------
 Algoritmo "ex12"
-
-
           Var
-            numero:inteiro
+      numero:inteiro
             Inicio
-                  escreval("escreva um número qualquer pertecentes aos inteiros")
-                    leia(numero)
-                      se(numero>=0)entao
-                             escreval("seu numero e POSITIVO")
+        escreval("escreva um número qualquer pertecentes aos inteiros")
+         leia(numero)
+          se(numero>=0)entao
+        escreval("seu numero e POSITIVO")
                            senao
-                                 escreval("seu numero e NEGATIVO")
-               fimse
+        escreval("seu numero e NEGATIVO")
+     fimse
 
 
 Fimalgoritmo
@@ -247,9 +245,33 @@ Algoritmo "ex17"
 
  fimalgoritmo
 -----------------------------------------------------------
+algoritmo "20"
+var
+   nome,sexo: caracter
+   pesoideal,altura: real
+inicio
+   escreva("Qual seu nome? ")
+   leia(nome)
+   escreva("Qual sua altura? ")
+   leia(altura)
+   repita
+      escreva("Qual o seu genero? (M ou F): ")
+      leia(sexo)
+      se (sexo <> "M") e (sexo <> "F") entao
+         escreval("Erro! digite apenas M ou F.")
+      fimse
+   ate (sexo = "M") ou (sexo = "F")
+   se (sexo = "M") entao
+      pesoideal <- (72.7 * altura) - 58
+   senao
+      pesoideal <- (62.1 * altura) - 44.7
+   fimse
+         escreval("Peso ideal: ", pesoideal)
+fimalgoritmo
+------------------------------------------------------------
 Algoritmo "ex27"
 var
-   n1, n2, n3: inteiro
+   n1,n2,n3: inteiro
 
 inicio
        escreval("Escreva um numero ")
@@ -288,7 +310,7 @@ fimalgoritmo
 -------------------------------------------------------
 Algoritmo "ex25"
 var
-   n1, n2, n3: inteiro
+   n1,n2,n3: inteiro
 
 inicio
        escreval("Escreva um numero ")
@@ -297,17 +319,83 @@ inicio
          leia(n2)
             escreval("Escreva um outro numero qualquer")
          leia(n3)
-              se (n1 <> n2) e (n1 <> n3) e (n2 <> n3) entao
+                     se (n1 <> n2) e (n1 <> n3) e (n2 <> n3) entao
                escreval("Entao o maior numero e:")
                      se (n1 > n2) e (n1 > n3) entao
                       escreval("O maior número é o primeiro: ", n1)
                                    senao
-                               se (n2 > n1) e (n2 > n3) entao
-                                escreval("O maior número é o segundo: ", n2)
+                     se (n2 > n1) e (n2 > n3) entao
+                      escreval("O maior número é o segundo: ", n2)
                                senao
-                                  escreval("O maior número é o terceiro: ", n3)
+                     escreval("O maior número é o terceiro: ", n3)
           fimse
         fimse
 fimalgoritmo
------------------------------------------------------------
-Algoritmo "ex26"
+--------------------------------------------------------------------------------
+algoritmo "31"
+var
+   x,y,z: inteiro
+   resposta: caracter
+
+inicio
+      leia(x)
+      leia(y)
+          z<-(x*y) + 5
+   se z <= 0 entao
+          resposta <- "A"
+   senao
+   se z <= 100 entao
+         resposta <- "B"
+   senao
+         resposta <- "C"
+      fimse
+   fimse
+      escreval(z, resultado)
+fimalgoritmo
+
+
+
+teste de mesa
+passo                             operação                       x            y            z                                resposta
+                                                                 3            2            11                                  B                    
+                                                                 150          3            455                                 C     
+                                                                 7           -1            -2                                  A                            
+                                                                -2            5            -5                                  A                 
+                                                                 50           3            155                                 C        
+                              INCOMPLETOOO                           INCOMPLETOOOO                                 INCOMPLETO                          INCOMPLETOO                                                                                                                                                
+----------------------------------------------------------------------------------------------------------
+algoritmo "39"
+var
+   a,b,c: inteiro
+   mens: caracter
+
+inicio
+      leia(a,b,c)
+      se (a<b+c) e (b<a+c) e (c<a+b) então
+    se (a=b) e (b=c) então
+      mens <- "Triângulo Equilátero"
+       senão
+    se (a=b) ou (b=c) ou (a=c) então
+      mens <- "Triângulo Isósceles"
+       senão
+      mens <- "Triângulo Escaleno"
+    fimse
+ fimse
+       senão
+      mens <-("Nao e possível formar um triângulo")
+   fimse
+      escreva(mens)
+fimalgoritmo
+
+
+teste de mesa 
+a   b   C                      mens
+1   2   3                      Nao e possível formar um triângulo                                
+3   4   5                      Triângulo Escaleno                                
+2   2   4                      Nao e possível formar um triângulo                                      
+4   4   5                      Triângulo Isósceles
+5   3   3                      Triângulo Isósceles
+---------------------------------------------------------------------
+
+                                                  
+
