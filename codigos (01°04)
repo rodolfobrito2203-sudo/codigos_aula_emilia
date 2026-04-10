@@ -419,6 +419,42 @@ passo                             operação                       x            
                                                                  50           3            155                                 C        
                               INCOMPLETOOO                           INCOMPLETOOOO                                 INCOMPLETO                          INCOMPLETOO                                                                                                                                                
 ----------------------------------------------------------------------------------------------------------
+algoritmo "ex36"
+var
+   quantidadeunit:inteiro
+   nomeproduto:caracter
+   s,preco,precounit,d:real
+inicio
+   s<-0
+   repita
+      escreval("Qual o nome do produto que voce pegou?? ")
+       leia(nomeproduto)
+       se (nomeproduto <> "SAIR") entao
+      escreval("Qual a quantidade unitaria que voce pegou desse produto? ")
+       leia(quantidadeunit)
+      escreval("Qual o preco unitario desse produto? ")
+       leia(precounit)
+      preco<-quantidadeunit*precounit
+      s<-(s + preco)
+      escreval(" o preco parcial e: ",s)
+     fimse
+   ate nomeproduto= "SAIR"
+   se (quantidadeunit<=5) entao
+     d<-(0.98*s)
+      escreval("o desconto adquirido,dada a quantidade unitaria adquirida desse produto e de 2%(0,98 do valor original")
+   senao
+      se (quantidadeunit>5) e (quantidadeunit<10) entao
+      d<-(0.97*s)
+         escreval("o desconto adquirido,dada a quantidade unitaria adquirida desse produto e de 3%(0.97 do valor original")
+      senao
+      d<-(0.95*s)
+         escreval("o desconto adquirido dada a quantidade unitaria adquirida desse produto e de 5%(0.95 do valor original")
+      fimse
+   fimse
+        escreval("o preco total e ",s)
+        escreval("seu desconto foi de ",d)
+fimalgoritmo
+-------------------------------------------------------------------------------
 algoritmo "ex39"
 var
    a,b,c: inteiro
